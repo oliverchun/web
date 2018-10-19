@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>动画</title>
+		<style type="text/css">
+			.box{width: 100px;height: 100px;background: #f00;
+			position: relative;animation: aa 2s ;
+			/*animation: aa 2s linear infinite alternate;*/
+			/*animation: 名字 时长 速度 延迟 重复不断播放 倒放 ;*/
+			animation-timing-function: linear;
+			animation-delay: 1s /*延迟*/;
+			animation-iteration-count: 3;/*次数*/
+			animation-direction:alternate;/*反向动画*/
+			
+			/*transition: all 2s;*/}
+			/*.box:hover{transform: translateX(200px);}*/
+			
+			@keyframes aa{
+				from{left:0;top: 0;}
+				to{left: 200px; top: 0;}
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="box">
+			@keyframes animationname{
+				keyframes-selector{css-styles;}
+			}
+		</div>
+	</body>
+</html>

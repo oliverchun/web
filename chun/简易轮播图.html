@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轮播图</title>
+		<style type="text/css">
+			*{margin:0;padding: 0;}
+			
+			img{display: block; width: 500px;height: 375px;}
+			.fu{width: 500px;height: 375px;
+			border: 1px black solid;
+			margin: 0 auto; position:relative ;}
+			.btn{position: absolute;right: 5px;bottom: 10px;}
+			.btn a {text-decoration: none;
+			width: 30px;height: 30px;background: rgba(0,0,0,.5);
+			/*border: solid 1px black;*/float: left;text-align: center;line-height: 30px;margin-right: 5px;color: white;}
+			.btn a:hover{background: black;}
+			.list{width: 500px;height: 375px;overflow: hidden;}
+			:target{background: yellow;}
+		</style>
+	</head>
+	<body>
+		<div class="fu">
+		<div class="btn">
+			<a href="#t1">1</a>
+			<a href="#t2">2</a>
+			<a href="#t3">3</a>
+			<a href="#t4">4</a>
+			
+		</div>
+		<div class="list">
+			<img src="img/QQ图片20171115185416.jpg" id="t1"/>
+			<img src="img/QQ图片20171116090114.jpg" id="t2"/>
+			<img src="img/QQ图片20171115185527.jpg" id="t3"/>
+			<img src="img/QQ图片20171116184033.jpg" id="t4"/>
+		</div>
+	</div>
+		
+		
+		
+		
+		<h1>锚点</h1>
+		<a href="#long">示例文字一</a>|
+		<a href="#long1">示例文字一</a>
+		<div id="long">
+			<h1>示例文字一</h1>
+			<p>此处是文字。。。。。。</p>
+		</div>
+		<div id="long1">
+			<h1>示例文字二</h1>
+			<p>此处是文字。。。。。。</p>
+		</div>
+		
+		
+	</body>
+</html>

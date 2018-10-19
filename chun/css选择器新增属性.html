@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选择器</title>
+		<style type="text/css">
+			img{width: 500px;height: 500px;}
+			/*#te{border: #0000CC 5px solid;}*/
+			img[alt]{border:#008000 5px solid ;}
+			img[title="ji"] {border: #000000 5px solid;}
+			input[type="text"] {border: dashed bisque 4px;}
+			input[type="submit"]{width: 100px;height: 50px;background: red;color: #000000;border: none;}
+		
+		.box1 {width: 100px;height: 100px;background: #008000;}
+		.box2 {width: 200px;height: 200px;background: #0000CC;}
+			/*.lihua {margin: 0 auto;}*/
+			div[class~="lihua"] {margin: 0 auto;}
+			
+		</style>
+	</head>
+	<body>
+		<div class="ao">
+			<img src="img/QQ图片20171114135517.jpg" alt="man"/>
+			<img src="img/QQ图片20171114135522.jpg" id="te" title="ji"/><br /><br />
+			<input type="text" alt="chun"/>
+			<input type="submit" value="登录" /><br /><br />
+			<input type="text"  alt="sun" />
+			<input type="submit" title="wen"/>
+			<div>
+				<div class="box1"></div>
+				<div class="box2 lihua"></div>
+				
+			</div>
+		</div>
+	</body>
+</html>

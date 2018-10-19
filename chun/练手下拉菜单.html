@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>菜单</title>
+		<style type="text/css">
+			.dropbtn{
+				background: green;
+				color: white;
+				
+				font-size: 16px;
+				border: none;
+				cursor: pointer;
+				width: 160px;
+				height: 50px;
+				float:left
+			}
+			.dropdown{
+				/*position: relative;*/
+				display: inline-block;
+			}
+			.dropdown-content{
+				display: none;
+				/*position: absolute;*/
+				background: #f9f9f9;
+				width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				
+			}
+			.dropdown-content a{
+				color: black;
+				/*padding: 12px 16px;*/
+				width: 160px;
+				height: 50px;
+			
+				text-decoration: none;
+				display: block;
+				
+			}
+			.dropdown-content a:hover {background: #008000;}
+			.dropdown:hover .dropdown-content {display: block;}
+			.dropdown:hover.dropbtn {
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dropdown">
+			<button class="dropbtn">下拉菜单</button>
+			<div class="dropdown-content">
+				<a href="#">你大爷</a>
+				<a href="#">你大爷</a>
+				<a href="#">你大爷</a>
+				<a href="#">你大爷</a>
+				<a href="#">你大爷</a>
+
+	</body>
+</html>

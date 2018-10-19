@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>2d</title>
+		<style type="text/css">
+			.box{width: 100px;height: 100px;background:#333333; transition:all 2s;}
+			.box:hover{width: 200px;height: 200px;background: #0086B3;}
+			.bianxing{width: 100px;height: 100px;background: #2469C8;transition:all 2s;}
+			.bianxing:hover{width: 100px;height: 100px;background: #2469C8;transform: rotate(30deg);
+			marg in: 100px auto;}
+			.yidong{width: 100px;height: 100px;
+					background: #008000;transition: all 2s;}
+			.yidong:hover{width: 100px;height: 100px;background: #008000; transform: translate(500px);}
+			.suofang{width: 150px;height: 150px;background: #BD2C00;transition: all 2s;margin: 100px auto;}
+			.suofang:hover{width: 150px;height: 150px;background: #BD2C00;transform: scale(2,-3);}				
+			.niuqu{width: 100px;height: 100px;background: #2E85FF;transition: all 2s;margin: 100px auto;}
+			.niuqu:hover{width: 100px;height: 100px;background: #2E85FF;transform: skew(180deg,180deg);}
+			
+			
+			.yuandian{width: 100px;height: 100px;background: #2469C8;transition:all 2s;margin: 100px auto;}
+			.yuandian:hover{transform-origin: left top; transform: rotate(30deg);}
+			
+			:target{background: #A71D5D;}
+		</style>
+	</head>
+	<body> 
+		<div class="box"></div>
+		<h1>maodian</h1>
+		<a href="#x">x</a>
+		<a href="#y">y</a>
+		<div id="x">
+			<p>文字。。。。。。。。。。。。。。。。。</p>
+			<p>文字。。。。。。。。。。。。。。。。。</p>
+			<p>文字。。。。。。。。。。。。。。。。。</p>
+			
+		</div>
+		<div id="y">
+			<p>文字。。。。。。。。。。。。。。。。。</p>
+			<p>文字。。。。。。。。。。。。。。。。。</p>
+			<p>文字。。。。。。。。。。。。。。。。。</p>
+			
+		</div>
+		<div class="bianxing">rotate</div>
+		<div class="yidong">translate</div>
+		<div class="suofang">scale</div>
+		<div class="niuqu">skew</div>
+		<div class="yuandian">transform-origin</div>
+		
+	</body>
+</html>
