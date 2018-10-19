@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+//			一加到n的和sum(100) = sum(99) + 100
+//					  sum(n) = sum(n - 1) + n
+
+		function sum(n){
+			if(n == 1){
+				return (1);
+				
+			}
+			return sum(n - 1) + n;
+		}
+		alert(sum(100));
+		
+		function print(n){
+			if(n == 0){
+				return;
+			}
+			
+			document.write("hello,word!!<br />");
+			return print(n - 1);
+		}
+		print(2)
+		</script>
+		
+	</head>
+	<body>
+	</body>
+</html>

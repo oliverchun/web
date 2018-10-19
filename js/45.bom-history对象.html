@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+//			alert(history.length)
+		window.onload = function(){
+			var oBack = document.getElementById("back");	
+			var oForward = document.getElementById("forward");	
+			var oGo = document.getElementById("go");	
+			oBack.onclick = function(){
+				history.back();
+			}
+			
+			oForward.onclick = function(){
+				history.forward(); 
+			}
+			
+			oGo.onclick = function(){
+				history.go(0);
+			}	
+		}
+			
+		</script>
+	</head>
+	<body>
+		<input type="button" id="back" value="back" />
+		<input type="button" id="forward" value="forward" />
+		<input type="button" id="go" value="go" />
+		
+		history
+		保存用户上网记录
+		
+		属性:
+		history.length  历史记录的条数
+		
+		方法:
+		history.back()  返回上一条 记录  
+		history.forword()返回下一条历史记录 
+		
+		history.go() 参数 0 重载 正负数 到那条的记录
+	</body>
+</html>

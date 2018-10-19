@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+		<script type="text/javascript">
+			
+//			获取元素节点
+//			id : document.getElementById()
+//			
+//			tagNmae node.getElementsByTagName()
+//			
+//			name  document.getElementsByName()
+//			
+//			className   document.getElementsByClassName()
+
+
+//通过封装简化操作
+//# id       通过 id 获取元素节点
+//.class     通过tongguoclassName获取元素节点
+//tagNmae    通过tagNmae获取元素节点
+//name = xxx 通过name获取元素节点
+		function $(vag){
+			//1对参数区分
+			switch(vag[0]){
+				case"#":
+					return document.getElementById(vge.substring(1));
+					break;
+				case".":
+					return document.getElementsByClassName(vge.substring(1));
+					break;
+				case"tagName":
+					return document.getElementsByTagName(vge);
+					break;
+				case"name":
+					return document.getElementsByName(vge.substring(5));
+					break;
+				
+				
+				
+			}
+		}
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

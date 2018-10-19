@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+//			日期对象 Date
+//			日期对象的创建方式:
+//			var d = new Date();
+//			alert(d);//Mon Sep 10 2018 22:44:38 GMT+0800 (中国标准时间)
+//			参数形式:
+//			Date("2015/08/22");
+//			Date("2015-08-22");
+//			Date(2016,04,13,14,34);
+//			var d = new Date("2015/08/22/10:25");
+//			var d = new Date("2015-08-22");
+//			var d = new Date(2016,04,13,14,34);
+//			
+//			alert(d);
+//			//一秒 = 1000毫秒
+//			var c = new Date(1000);
+//			alert(c);
+//			
+//			var f = new Date("1997/10/11/11:12");
+//			alert(f);
+			
+//			日期的格式方法
+//			[格式] 日期对象.方法();
+//			var a = new Date();
+//			alert(a.toDateString());//Mon Sep 10 2018
+//			alert(a.toLocaleDateString());//2018/9/10
+//			alert(a.toGMTString());//Mon, 10 Sep 2018 15:32:11 GMT
+//			alert(a.toTimeString());//23:32:11 GMT+0800 (中国标准时间)
+//			alert(a.toLocaleTimeString());//下午11:34:24
+//			alert(a.toUTCString());//Mon, 10 Sep 2018 15:34:24 GMT
+			
+//			set系列函数 是设置值
+//			get系列函数 是获取值
+
+//			var d = new Date();
+//			alert(d.getDate());
+//			d.setDate(8);
+//			alert(d);
+			
+			//参照物都是1970年
+//			d.set/getTime() 设置/获取当前时间距离1970年的毫秒数
+//			var d1 = new Date();
+//			alert(d1);
+//			alert(d1.getTime());//1536594619880
+//			d1.setTime(1000);
+//			alert(d1);
+//			var d2 = new Date(1536594619880);
+//			alert(d2);
+//			
+			
+			
+//			Date.parse("2015-08-24");返回1970的毫秒数
+			var time = Date.parse("2018-9-10");
+			alert(time);
+			var d = new Date(time);
+			alert(d);
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+//			set/getAttribute()
+//			removeAttribute()
+			window.onload = function(){
+				var btn = document.getElementById("div1");
+//				alert(btn.className);
+//				btn.title = "xxx";
+//				btn.className = "box3";
+				alert(btn.getAttribute("title"));
+				btn.setAttribute("title","xxx");
+				alert(btn.getAttribute("title"));
+				btn.xxx = "yyyy";
+				btn.setAttribute("xxx","yyy");
+				alert(btn.xxx);
+				//删除属性
+				btn.removeAttribute("title");
+				
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1" title="hello"  name="word" class="box"></div>
+	</body>
+</html>

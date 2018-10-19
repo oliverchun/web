@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var count = 0;//1-20的变量
+			var arr = [];
+			for (var i = 0;i < 5;i++){//生成五个数组,存储在arr中
+				var newarr = [];
+				//每个newarr都有五个数
+				for(var j = 0; j < 5; j++){
+					newarr.push(++count);
+				}
+				arr.push(newarr);
+			}
+			alert(arr[0]);
+			alert(arr[0][0]);
+			
+			for (var i = 0; i < arr.length;i++) {
+				
+				for(var j = 0; j <= i;j++){
+					document.write(arr[i][j] +"&ensp;");
+				}
+				document.write(" <br />");
+				
+			}
+		</script>
+	</head>
+	<body>
+		<!--1, 2, 3, 4, 5 
+		6, 7, 8, 9, 10
+		11,12,13,14,15
+		16,17,18,19,20-->
+		
+	</body>
+</html>

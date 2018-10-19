@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var Btn = document.getElementById("btn");
+				Btn.onclick = function(){
+					location.assign("http://www.hao123.com/")
+//					location.reload(true);
+//					location.replace("http://www.hao123.com")
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="按钮"  id="btn"/>
+		location方法
+		assign()  跳转到指定的url
+		
+		reload()  重载当前的url  参数true  忽略缓存强制刷新
+		
+		
+		replace()  用Url替换就得url
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var nodes = document.getElementsByName("hello");
+//				参数: name的值
+//				只能在dom里找,不能再div下找
+				alert(nodes);
+			}
+		</script>
+	</head>
+	<body>
+		<span name="hello">1</span>
+		<div name="hello">1</div>
+		<h1 name = "hello">1</h1>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function LeapYear(year){
+				if(year %400 == 0 || year %4 == 0 && year %100 != 0){
+					return("这是闰年!!");
+				}else{
+					return("不是闰年!!")
+				}
+			}
+			alert(LeapYear(2000));
+			
+			
+//			function sushu(number){
+//				if(number %number == 0 && number %1 == 0){
+//					return true;
+//				}else{
+//					return false;
+//				}
+//			}
+//			alert(sushu(10));错误的
+			function print(number){
+				var isyes = false;
+				for(var i = 2;i < number; i++){
+					if(number %i == 0 ){
+						isyes = true;
+						break;
+					}
+				}
+				return !isyes;
+			}
+			alert(print(3));
+		</script>
+		
+	</head>
+	<body>
+	</body>
+</html>

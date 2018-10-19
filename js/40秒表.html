@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.fu{
+				width: 300px;
+				height: 400px;
+				background:gray;
+				
+				margin: 100px auto;
+				text-align: center;
+			}
+			.count{
+				width: 200px;
+				height: 150px;
+				line-height: 150px;
+				margin:  0 auto;
+				font-size: 40px;
+				
+			}
+			.fu input{
+				width: 150px;
+				height: 40px;
+				background: yellow;
+				margin-top: 20px;
+				font-size: 30px;
+				cursor:pointer;//手
+			}
+			input:hover{background: cyan;}
+		</style>
+		<script type="text/javascript">
+//			简化节点
+			function $(id){
+				return document.getElementById(id);
+			}
+			
+			window.onload = function(){
+				//开始计数:
+				var count = 0;
+				var timer = null;
+				$("start").onclick = function(){
+					timer = setInterval(function(){
+						count++;
+						//改变页面上的时分秒的值
+						
+						$("id_S").innerHTML =shownumber(count % 60) ;
+						$("id_M").innerHTML =shownumber(parseInt(count / 60)%60) ;
+						$("id_S").innerHTML =shownumber(count % 60) ;
+						$("id_H").innerHTML =shownumber(parse(count / 3600));
+					},10);
+					
+				}
+				$("pause").onclick = function(){
+					clearInterval(timer);
+				}
+				$("stop").onclick = function(){
+						clearInterval(timer);
+						count = 0;
+					    $("id_S").innerHTML = "00";
+						$("id_M").innerHTML = "00";
+						$("id_S").innerHTML = "00";
+						$("id_H").innerHTML = "00";
+				}
+			}
+			
+			//处理单个数字
+			function shownumber(num){
+				if (num < 10){
+					return "0" + num;
+				}else{
+					return num;
+				}
+			}
+				
+		</script>
+	</head>
+	<body>
+		<div class="fu">
+			<div class="count">
+				<span id="id_H">00</span>:
+				<span id="id_M">00</span>:
+				<span id="id_S">00</span>
+			
+			</div>
+			<input type="button" id="start" value="开始" />
+			<input type="button" id="pause" value="暂停" />
+			<input type="button" id="stop" value="停止" />
+			
+		</div>
+	</body>
+</html>

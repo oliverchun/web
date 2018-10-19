@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var btn = document.getElementById("btn");
+				var chun = document.getElementById("chun");
+				btn.onclick = function(){
+//					alert(chun.innerHTML);
+//					设置div内容
+					chun.innerHTML = "<h1>rinidaye</h1>"
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!--innerHTML 标签的所有内容-->
+		<div id = "chun"><em>斜体</em></div>
+		<input type="button" id = "btn"value="按钮" />
+		
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function rabbit(month){
+				if (month < 4){
+					return 1;
+				}
+				return rabbit(month - 3) + rabbit(month - 1);
+			}
+			alert(rabbit(5))
+//			rabbit(4) = rabbit(1) + rabbit(3);
+ 		</script>
+	</head>
+	<body>
+	</body>
+</html>

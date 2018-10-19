@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>location</title>
+		<script type="text/javascript">
+//			alert(window.location);
+//			alert(location);
+//			alert(window.document.location);
+		window.onload = function(){
+			document.onclick = function(){
+//				alert(1);
+				location.hash = "#3";
+			}
+			
+		}
+		alert(location.hostname);
+		</script>
+	</head>
+	<body>
+		location 浏览器的地址输入框
+		属性:整个地址网址端口号啥的
+		hash 锚点 #1 页内跳转
+		
+		host 主机名端口号 浏览器的端口默认 8080
+		IP:端口号
+		hostname 主机名  域名/ip
+		href 整个url
+		pathname 路径名
+		port 端口号
+	
+		portocol 协议  http:  file:
+		search 查询字符串?后面的
+		
+		url
+		protocol 协议:host 主机名:port端口号/pathname路径?字符串查询search#锚点hash
+		
+	</body>
+</html>

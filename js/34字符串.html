@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+//		 var str = new String("hello");
+//		 alert(str);
+//		 var str = String("hello");
+//		 alert(str);
+//		 var str = "hello";
+//		 
+//		 alert(str.length);//字符串长度
+//		 alert(str.charAt(2));
+//		 alert(str[1]);
+//		 alert(str);
+//		 
+//		 alert(typeof str);
+//		 var str1 = "mama" + " " +"爸爸";
+//		 alert(str1)
+
+
+
+//函数:
+//		var str = "啦啦啦".sub() + "回家".strike() + "去死".blink();
+//		document.write(str);
+//		var a = "chunchun";
+//		document.write(a.charCodeAt(1));
+//		var str1 = String.fromCharCode(87,98,99);
+//		alert(str1);
+//		
+//		
+//		var s = "cao";
+//		var d = "啦啦";
+//		alert(s.concat(d));
+//		alert(s + d);
+
+//查找
+//			var str = "abcabcabc";
+//			alert(str.indexOf("abc",1));//diyici
+//			
+//			alert(str.lastIndexOf("abc"));//zuihouyici
+	
+
+//替换
+//		var str = "hello how are are you";
+//		alert(str.replace(/are/g,"old"));
+		var str = "hello,how,are,you";
+		alert(str.replace(/,/g," "));
+
+
+//截取
+//		var str1 = "chenyachun is good man";
+//		alert(str1.substring(1,5));
+//		
+//分割
+//		var str3 = "hello old man";
+//		alert(str3.split(" ",2));
+////		alert(str3.split(""));
+//		var a = str3.split("");
+//		alert(a);
+//		alert(a.join(""));
+//		
+////大小写
+//		var str5 = "Hello World";
+//		alert(str5.toLowerCase());//小写
+//		alert(str5.toUpperCase());//大写
+
+
+//严格模式:
+//		function m1(){
+//			"use strict";
+//			 var max = 10;
+//			 alert(max);
+//		}
+//		m1();
+//		
+////新增数组方法:
+//		var a=[10,20,30,40,50,30];
+//		alert(a.indexOf(30,3));
+		
+//		遍历
+		var arr = [10,20,30,50,90,20];
+//		arr.forEach(function(item,index,array){
+//			alert(item + "," + index + "," + array );
+//		})
+//		arr.forEach(alert);
+		//映射
+//		var newarr = arr.map(function(item){
+		
+//		var newarr = arr.map(function(item,index,array){
+//			return item + 2;
+//		})
+//		alert(newarr);
+//			
+			//归并
+//		arr.reduce(function(pre,next,index,array){
+//			alert(pre + "," + next);
+//			return pre + next;
+//			
+//		})
+		//过滤
+		var res = arr.filter(function(item,index,array){
+			return item > 20;
+		})
+		alert(res);	
+		//some 某些
+		var ev = arr.some(function(item,index,array){
+			return item != 20;
+		})
+		alert(ev)
+		//every
+			var evc = arr.every(function(item,index,array){
+			return item != 20;
+		})
+		alert(evc)
+		
+		
+		</script>
+	</head>
+	<body>
+		创建字符窜三种方法:
+		new String
+		String
+		""
+		
+		字符串的个数
+		str.length;
+		访问字符串的字符;
+		charAt()
+		[格式]字符串.charAt(下标);= str[下标];
+		ECMAScript 字符串不可改变
+		+ 拼接
+		
+		
+		字符窜函数
+		big() 大号
+		blink() 闪动字符串
+		bold() 粗体
+		fixed() 打字机文本
+		strike()删除线
+		fontcolor()指定颜色
+		fontsize()
+		link()连接
+		sub()下标
+		sup()上标
+		
+		String.charCodeAt()
+		返回对应下标的ASCII码值
+		.fromcharCode(97,98,99);
+		返回对应的ASSII码值的字符 ABC
+		
+		concat(); 拼接
+		[格式] 字符串1.concat(字符串2)
+		
+		
+		
+字符窜的查找方法:
+	indexOf()
+	字符串.indexOf(字窜,开始查找位置)字符串第一次出现的位置
+	
+	lastIndexOf()
+	字符串.lastIndexOf("字符串");
+	返回最后一次出现的位置
+	
+	search( ) 参数可以是正则表达的式;
+	var str = "abc";
+	alert(str.search("abc"));
+	alert(str.search(/abc/i));/i 代表忽略大小写 g代表全局匹配
+	
+替换:
+	replace()
+	[格式] 字符串.replace(匹配的字符串/正则表达式,替换成新的字符串)
+
+截取:
+	substring()
+	[格式]字符串.substring(start,end);
+	
+分割:
+	split
+	字符串.split(分隔符,生成数组的长度);
+	返回值:通过分隔符,分割成装有字符串的数组;
+	字符串 => 数组 split 数组 => 字符串 join
+大小写:
+	toLowerCase()字符窜转换成小写;
+	toUpperCase()字符串转换成大写;
+
+
+严格模式:
+	ECMA标准
+	ECMA5 第五版
+	"use strict";
+	
+新增数组方法：
+    indexOf（）数组
+    [格式] 数组.indexOf(元素,index);
+    forEach()
+    [格式] 数组.forEach(function(item,index,array){
+    	item 当前遍历到的元素
+    	index当前遍历到的下标
+    	array 当前数组
+    	
+    })
+    功能:遍历数组
+    
+   map映射 遍历->操作-> 返回
+   
+   reduce 归并
+   filter 过滤
+   some 某些  判断
+   every 跟some 一样但要求每一项都符合才返回ture,有一项不符合就返回false
+   
+   
+	
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+//			对象也是数组类型
+//		变量(单个数据) => 数组(批量数据) => 对象(数据.函数)
+			
+			
+			//创建对象
+//			对象中的数据,叫做对象的属性
+//			对象中的函数,叫做对象的方法
+
+//声明函数  : function show(){
+	
+//}     等同
+				//var show = function(){}  匿名函数
+//     1.使用new运算符创建对象
+//		var person = new Object();
+//		//添加数据/属性
+//		person.name = "chun";
+//		person.age = 18;
+//		//添加函数/方法;
+//		person.showName = function(){
+//			alert(person.name);
+//		}
+//		//访问上面的属性和方法
+//		alert(person.name);
+//		person.showName();
+//		
+//		2.省略new
+var person = Object();
+		//添加数据/属性
+		person.name = "chun";
+		person.age = 18;
+		//添加函数/方法;
+		person.showName = function(){
+			alert(person.name);
+		}
+		//访问上面的属性和方法
+		alert(person.name);
+		person.showName();
+		
+		
+		//3.使用常量/字面量去创建对象
+		var person = {};
+		person.name = "ya";
+//		person["name"] = "ya";
+		person.age = 22;
+		person.showName = function(){
+			alert(person.name);
+		}
+//		alert(person["name"]);
+		alert(person.age);
+		person.showName();
+//		4delete 删除对象属性
+		delete(person.age);
+		alert(person.age)
+		
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
